@@ -52,7 +52,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            touch getthis.ok
+            echo 'sample output'
             # Pull image mà được push lên DockerHub bên trên
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/simple-server:${{ github.sha }}
 
